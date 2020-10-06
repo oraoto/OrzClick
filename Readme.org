@@ -76,3 +76,14 @@ for ($i = 0; $i < 10; $i++) {
 }
 $client->insertColumnar('default.insert_demo', $columns, $columnarData);
 #+end_src
+** Benchmark
+
+As of 2020-10-06, OrzClick slightly faster than [[https://github.com/SeasX/SeasClick][SeasClick]]
+
+Select benchmark result (lower is better):
+
+[[./bench/image/bench-select.png]]
+
+Insert benchmark result (lower is better):
+
+[[./bench/image/bench-insert.png]]

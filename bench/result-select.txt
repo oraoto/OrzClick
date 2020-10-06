@@ -1,0 +1,96 @@
+Benchmark #1: php select-mysql.php 10 1000
+  Time (mean ± σ):     836.4 ms ±   8.2 ms    [User: 54.3 ms, System: 27.2 ms]
+  Range (min … max):   823.9 ms … 844.8 ms    10 runs
+
+Benchmark #2: php select-orzclick.php 10 1000
+  Time (mean ± σ):      1.106 s ±  0.025 s    [User: 69.1 ms, System: 36.5 ms]
+  Range (min … max):    1.079 s …  1.163 s    10 runs
+
+Benchmark #3: php select-seasclick.php 10 1000
+  Time (mean ± σ):      1.119 s ±  0.030 s    [User: 74.8 ms, System: 39.2 ms]
+  Range (min … max):    1.080 s …  1.192 s    10 runs
+
+Summary
+  'php select-mysql.php 10 1000' ran
+    1.32 ± 0.03 times faster than 'php select-orzclick.php 10 1000'
+    1.34 ± 0.04 times faster than 'php select-seasclick.php 10 1000'
+Benchmark #1: php select-mysql.php 100 1000
+  Time (mean ± σ):     958.5 ms ±   1.9 ms    [User: 101.1 ms, System: 35.8 ms]
+  Range (min … max):   956.5 ms … 963.1 ms    10 runs
+
+Benchmark #2: php select-orzclick.php 100 1000
+  Time (mean ± σ):      1.144 s ±  0.021 s    [User: 112.0 ms, System: 41.6 ms]
+  Range (min … max):    1.115 s …  1.180 s    10 runs
+
+Benchmark #3: php select-seasclick.php 100 1000
+  Time (mean ± σ):      1.153 s ±  0.034 s    [User: 160.7 ms, System: 41.3 ms]
+  Range (min … max):    1.115 s …  1.206 s    10 runs
+
+Summary
+  'php select-mysql.php 100 1000' ran
+    1.19 ± 0.02 times faster than 'php select-orzclick.php 100 1000'
+    1.20 ± 0.04 times faster than 'php select-seasclick.php 100 1000'
+Benchmark #1: php select-mysql.php 200 1000
+  Time (mean ± σ):      1.088 s ±  0.001 s    [User: 147.3 ms, System: 32.9 ms]
+  Range (min … max):    1.087 s …  1.089 s    10 runs
+
+Benchmark #2: php select-orzclick.php 200 1000
+  Time (mean ± σ):      1.158 s ±  0.027 s    [User: 146.1 ms, System: 39.2 ms]
+  Range (min … max):    1.117 s …  1.190 s    10 runs
+
+Benchmark #3: php select-seasclick.php 200 1000
+  Time (mean ± σ):      1.177 s ±  0.027 s    [User: 238.7 ms, System: 40.3 ms]
+  Range (min … max):    1.135 s …  1.213 s    10 runs
+
+Summary
+  'php select-mysql.php 200 1000' ran
+    1.06 ± 0.02 times faster than 'php select-orzclick.php 200 1000'
+    1.08 ± 0.02 times faster than 'php select-seasclick.php 200 1000'
+Benchmark #1: php select-mysql.php 500 1000
+  Time (mean ± σ):      1.513 s ±  0.014 s    [User: 296.4 ms, System: 16.8 ms]
+  Range (min … max):    1.486 s …  1.528 s    10 runs
+
+Benchmark #2: php select-orzclick.php 500 1000
+  Time (mean ± σ):      1.200 s ±  0.031 s    [User: 262.9 ms, System: 37.1 ms]
+  Range (min … max):    1.156 s …  1.242 s    10 runs
+
+Benchmark #3: php select-seasclick.php 500 1000
+  Time (mean ± σ):      1.402 s ±  0.020 s    [User: 489.5 ms, System: 35.7 ms]
+  Range (min … max):    1.373 s …  1.430 s    10 runs
+
+Summary
+  'php select-orzclick.php 500 1000' ran
+    1.17 ± 0.03 times faster than 'php select-seasclick.php 500 1000'
+    1.26 ± 0.03 times faster than 'php select-mysql.php 500 1000'
+Benchmark #1: php select-mysql.php 1000 1000
+  Time (mean ± σ):      2.179 s ±  0.026 s    [User: 499.8 ms, System: 36.0 ms]
+  Range (min … max):    2.123 s …  2.217 s    10 runs
+
+Benchmark #2: php select-orzclick.php 1000 1000
+  Time (mean ± σ):      1.429 s ±  0.018 s    [User: 480.8 ms, System: 38.7 ms]
+  Range (min … max):    1.408 s …  1.475 s    10 runs
+
+Benchmark #3: php select-seasclick.php 1000 1000
+  Time (mean ± σ):      1.839 s ±  0.025 s    [User: 880.6 ms, System: 32.5 ms]
+  Range (min … max):    1.807 s …  1.880 s    10 runs
+
+Summary
+  'php select-orzclick.php 1000 1000' ran
+    1.29 ± 0.02 times faster than 'php select-seasclick.php 1000 1000'
+    1.52 ± 0.03 times faster than 'php select-mysql.php 1000 1000'
+Benchmark #1: php select-mysql.php 1500 1000
+  Time (mean ± σ):      2.820 s ±  0.032 s    [User: 718.6 ms, System: 34.4 ms]
+  Range (min … max):    2.772 s …  2.855 s    10 runs
+
+Benchmark #2: php select-orzclick.php 1500 1000
+  Time (mean ± σ):      1.705 s ±  0.019 s    [User: 709.5 ms, System: 20.7 ms]
+  Range (min … max):    1.678 s …  1.740 s    10 runs
+
+Benchmark #3: php select-seasclick.php 1500 1000
+  Time (mean ± σ):      2.266 s ±  0.017 s    [User: 1.271 s, System: 0.034 s]
+  Range (min … max):    2.236 s …  2.287 s    10 runs
+
+Summary
+  'php select-orzclick.php 1500 1000' ran
+    1.33 ± 0.02 times faster than 'php select-seasclick.php 1500 1000'
+    1.65 ± 0.03 times faster than 'php select-mysql.php 1500 1000'
