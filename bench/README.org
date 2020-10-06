@@ -1,0 +1,15 @@
+* Prepare
+
+  #+begin_src bash
+  php create-data.php
+  #+end
+
+* Run
+
+  #+begin_src bash
+  ./bench-select.sh
+  #+end_src
+
+  #+begin_src shell
+  ./bench-insert.sh
+  #+end_src

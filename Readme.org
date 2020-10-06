@@ -1,0 +1,78 @@
+* OrzClick
+
+PHP client for [[https://clickhouse.yandex][Yandex ClickHouse]], powered by PHP-CPP and [[https://github.com/clickhouse/clickhouse-cpp][clickhouse-cpp]].
+
+** Supported data types
+
+- Array(T)
+- Date
+- DateTime
+- Decimal(P,S), Decimal32, Decimal64, Decimal128
+- Enum8, Enum16
+- FixedString(N)
+- Float32, Float64
+- IPv4, IPv6
+- Nullable(T)
+- String
+- Tuple
+- UInt8, UInt16, UInt32, UInt64, Int8, Int16, Int32, Int64
+
+Limitations:
+
+- Tuple can not nested in Array, eg, Array(Tuple(Int8, Int8)) is not supported
+- UInt64 are returen as Int64, since PHP doesn't support 64-bits unsigned integer
+
+** Building
+
+Prerequisite
+
+- clang >= 10, with lld as default linker
+- php >= 7.4
+- cmake
+
+Run
+
+#+begin_src shell
+./build.sh
+#+end_src
+
+Then you have ~liborzclick.so~ in build directory.
+
+** Example
+
+#+begin_src php
+$options = (new OrzClick\ClientOptions())
+         ->setHost('127.0.0.1')
+         ->setCompressionMethod(1)
+         ->TcpNoDelay(true);
+
+$client = new OrzClick\Client($options);
+
+// Execute statement
+$client->execute('create table if not exists default.insert_demo (
+   id  UInt32,
+   arr Array(Int32)
+) Engine = Memory' );
+
+// Column definition
+$columns = [
+    'id'  => new OrzClick\ColumnUInt32(),
+    'arr' => new OrzClick\ColumnArray(new OrzClick\ColumnInt32),
+];
+
+// KV data
+for ($i = 0; $i < 10; $i++) {
+    $data[]  = [
+        'id' => $i,
+        'arr' => [$i , $i + 1]
+    ];
+}
+$client->insert('default.insert_demo', $columns, $data);
+
+// Columnar Data
+for ($i = 0; $i < 10; $i++) {
+    $columnarData['id'][]  = $i;
+    $columnarData['arr'][] = [$i, $i * 2];
+}
+$client->insertColumnar('default.insert_demo', $columns, $columnarData);
+#+end_src
