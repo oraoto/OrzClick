@@ -1,126 +1,156 @@
 Benchmark #1: php insert-orzclick.php 275 500
-  Time (mean ± σ):     145.9 ms ±   2.1 ms    [User: 41.2 ms, System: 16.6 ms]
-  Range (min … max):   143.9 ms … 150.6 ms    10 runs
-
+  Time (mean ± σ):     147.5 ms ±   3.1 ms    [User: 45.4 ms, System: 14.3 ms]
+  Range (min … max):   142.2 ms … 152.5 ms    10 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 275 500
-  Time (mean ± σ):     134.9 ms ±   2.8 ms    [User: 36.2 ms, System: 11.5 ms]
-  Range (min … max):   131.3 ms … 140.6 ms    10 runs
-
+  Time (mean ± σ):     134.3 ms ±   2.6 ms    [User: 33.1 ms, System: 14.7 ms]
+  Range (min … max):   131.2 ms … 138.9 ms    10 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 275 500
-  Time (mean ± σ):     137.8 ms ±   2.0 ms    [User: 38.2 ms, System: 12.7 ms]
-  Range (min … max):   134.4 ms … 141.2 ms    10 runs
-
-Benchmark #4: php insert-seasclick.php 275 500
-  Time (mean ± σ):     502.5 ms ±  32.3 ms    [User: 45.0 ms, System: 16.8 ms]
-  Range (min … max):   455.2 ms … 546.4 ms    5 runs
-
+  Time (mean ± σ):     139.0 ms ±   3.0 ms    [User: 36.2 ms, System: 15.6 ms]
+  Range (min … max):   134.0 ms … 143.2 ms    10 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 275 500
+  Time (mean ± σ):      47.5 ms ±  12.7 ms    [User: 35.6 ms, System: 6.3 ms]
+  Range (min … max):    40.0 ms …  82.7 ms    10 runs
+ 
+Benchmark #5: php insert-seasclick.php 275 500
+  Time (mean ± σ):     443.7 ms ±  42.1 ms    [User: 45.1 ms, System: 16.3 ms]
+  Range (min … max):   375.7 ms … 499.5 ms    6 runs
+ 
 Summary
-  'php insert-orzclick-columnar.php 275 500' ran
-    1.02 ± 0.03 times faster than 'php insert-orzclick-indexed.php 275 500'
-    1.08 ± 0.03 times faster than 'php insert-orzclick.php 275 500'
-    3.73 ± 0.25 times faster than 'php insert-seasclick.php 275 500'
+  'php insert-seasclick-block.php 275 500' ran
+    2.83 ± 0.76 times faster than 'php insert-orzclick-columnar.php 275 500'
+    2.92 ± 0.78 times faster than 'php insert-orzclick-indexed.php 275 500'
+    3.10 ± 0.83 times faster than 'php insert-orzclick.php 275 500'
+    9.33 ± 2.65 times faster than 'php insert-seasclick.php 275 500'
 Benchmark #1: php insert-orzclick.php 500 500
-  Time (mean ± σ):     171.7 ms ±   4.9 ms    [User: 65.0 ms, System: 13.0 ms]
-  Range (min … max):   165.5 ms … 182.3 ms    10 runs
-
+  Time (mean ± σ):     173.3 ms ±   4.7 ms    [User: 68.9 ms, System: 10.6 ms]
+  Range (min … max):   167.7 ms … 181.1 ms    10 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 500 500
-  Time (mean ± σ):     154.5 ms ±  12.6 ms    [User: 47.8 ms, System: 11.7 ms]
-  Range (min … max):   142.6 ms … 177.9 ms    10 runs
-
+  Time (mean ± σ):     147.1 ms ±   2.5 ms    [User: 44.7 ms, System: 11.4 ms]
+  Range (min … max):   143.8 ms … 151.5 ms    10 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 500 500
-  Time (mean ± σ):     174.6 ms ±   3.1 ms    [User: 59.9 ms, System: 15.6 ms]
-  Range (min … max):   171.2 ms … 180.1 ms    10 runs
-
-Benchmark #4: php insert-seasclick.php 500 500
-  Time (mean ± σ):     689.1 ms ±  92.9 ms    [User: 73.2 ms, System: 14.9 ms]
-  Range (min … max):   585.3 ms … 808.2 ms    5 runs
-
+  Time (mean ± σ):     158.3 ms ±   3.8 ms    [User: 51.1 ms, System: 14.0 ms]
+  Range (min … max):   150.9 ms … 163.2 ms    10 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 500 500
+  Time (mean ± σ):      58.5 ms ±   5.6 ms    [User: 52.4 ms, System: 4.7 ms]
+  Range (min … max):    55.6 ms …  73.5 ms    10 runs
+ 
+Benchmark #5: php insert-seasclick.php 500 500
+  Time (mean ± σ):     609.8 ms ±  35.8 ms    [User: 71.5 ms, System: 6.9 ms]
+  Range (min … max):   562.4 ms … 649.3 ms    4 runs
+ 
 Summary
-  'php insert-orzclick-columnar.php 500 500' ran
-    1.11 ± 0.10 times faster than 'php insert-orzclick.php 500 500'
-    1.13 ± 0.09 times faster than 'php insert-orzclick-indexed.php 500 500'
-    4.46 ± 0.70 times faster than 'php insert-seasclick.php 500 500'
+  'php insert-seasclick-block.php 500 500' ran
+    2.51 ± 0.24 times faster than 'php insert-orzclick-columnar.php 500 500'
+    2.70 ± 0.27 times faster than 'php insert-orzclick-indexed.php 500 500'
+    2.96 ± 0.29 times faster than 'php insert-orzclick.php 500 500'
+   10.42 ± 1.17 times faster than 'php insert-seasclick.php 500 500'
 Benchmark #1: php insert-orzclick.php 1000 500
-  Time (mean ± σ):     282.4 ms ±  18.9 ms    [User: 130.8 ms, System: 17.6 ms]
-  Range (min … max):   251.9 ms … 318.2 ms    10 runs
-
+  Time (mean ± σ):     283.3 ms ±  10.2 ms    [User: 130.6 ms, System: 18.5 ms]
+  Range (min … max):   264.2 ms … 293.4 ms    10 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 1000 500
-  Time (mean ± σ):     172.8 ms ±   4.2 ms    [User: 58.9 ms, System: 15.9 ms]
-  Range (min … max):   167.6 ms … 179.7 ms    10 runs
-
+  Time (mean ± σ):     174.4 ms ±   5.1 ms    [User: 58.6 ms, System: 17.0 ms]
+  Range (min … max):   168.2 ms … 181.5 ms    10 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 1000 500
-  Time (mean ± σ):     208.2 ms ±   4.5 ms    [User: 87.7 ms, System: 13.2 ms]
-  Range (min … max):   202.3 ms … 216.4 ms    10 runs
-
-Benchmark #4: php insert-seasclick.php 1000 500
-  Time (mean ± σ):     830.6 ms ± 177.1 ms    [User: 118.0 ms, System: 21.9 ms]
-  Range (min … max):   553.0 ms … 1017.2 ms    5 runs
-
+  Time (mean ± σ):     208.2 ms ±   5.6 ms    [User: 86.7 ms, System: 14.3 ms]
+  Range (min … max):   201.0 ms … 220.2 ms    10 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 1000 500
+  Time (mean ± σ):     107.7 ms ±  12.0 ms    [User: 97.7 ms, System: 8.3 ms]
+  Range (min … max):    95.8 ms … 122.5 ms    10 runs
+ 
+Benchmark #5: php insert-seasclick.php 1000 500
+  Time (mean ± σ):      1.120 s ±  0.115 s    [User: 129.9 ms, System: 18.8 ms]
+  Range (min … max):    1.014 s …  1.241 s    3 runs
+ 
 Summary
-  'php insert-orzclick-columnar.php 1000 500' ran
-    1.20 ± 0.04 times faster than 'php insert-orzclick-indexed.php 1000 500'
-    1.63 ± 0.12 times faster than 'php insert-orzclick.php 1000 500'
-    4.81 ± 1.03 times faster than 'php insert-seasclick.php 1000 500'
+  'php insert-seasclick-block.php 1000 500' ran
+    1.62 ± 0.19 times faster than 'php insert-orzclick-columnar.php 1000 500'
+    1.93 ± 0.22 times faster than 'php insert-orzclick-indexed.php 1000 500'
+    2.63 ± 0.31 times faster than 'php insert-orzclick.php 1000 500'
+   10.40 ± 1.57 times faster than 'php insert-seasclick.php 1000 500'
 Benchmark #1: php insert-orzclick.php 2000 500
-  Time (mean ± σ):     503.9 ms ±  29.7 ms    [User: 281.5 ms, System: 37.5 ms]
-  Range (min … max):   467.4 ms … 542.2 ms    6 runs
-
+  Time (mean ± σ):     514.7 ms ±  32.0 ms    [User: 279.8 ms, System: 45.6 ms]
+  Range (min … max):   463.8 ms … 536.9 ms    5 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 2000 500
-  Time (mean ± σ):     276.8 ms ±   4.3 ms    [User: 112.4 ms, System: 34.4 ms]
-  Range (min … max):   269.7 ms … 283.3 ms    10 runs
-
+  Time (mean ± σ):     277.8 ms ±   5.3 ms    [User: 123.8 ms, System: 23.0 ms]
+  Range (min … max):   270.4 ms … 287.2 ms    10 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 2000 500
-  Time (mean ± σ):     397.6 ms ±  18.4 ms    [User: 192.0 ms, System: 36.5 ms]
-  Range (min … max):   369.3 ms … 425.8 ms    7 runs
-
-Benchmark #4: php insert-seasclick.php 2000 500
-  Time (mean ± σ):      2.585 s ±  0.238 s    [User: 255.6 ms, System: 64.0 ms]
-  Range (min … max):    2.369 s …  2.841 s    3 runs
-
+  Time (mean ± σ):     392.2 ms ±  25.9 ms    [User: 191.0 ms, System: 35.0 ms]
+  Range (min … max):   359.2 ms … 429.6 ms    8 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 2000 500
+  Time (mean ± σ):     251.4 ms ±   9.7 ms    [User: 211.1 ms, System: 37.2 ms]
+  Range (min … max):   239.9 ms … 266.1 ms    10 runs
+ 
+Benchmark #5: php insert-seasclick.php 2000 500
+  Time (mean ± σ):      2.611 s ±  0.448 s    [User: 270.7 ms, System: 53.8 ms]
+  Range (min … max):    2.095 s …  2.891 s    3 runs
+ 
 Summary
-  'php insert-orzclick-columnar.php 2000 500' ran
-    1.44 ± 0.07 times faster than 'php insert-orzclick-indexed.php 2000 500'
-    1.82 ± 0.11 times faster than 'php insert-orzclick.php 2000 500'
-    9.34 ± 0.87 times faster than 'php insert-seasclick.php 2000 500'
+  'php insert-seasclick-block.php 2000 500' ran
+    1.11 ± 0.05 times faster than 'php insert-orzclick-columnar.php 2000 500'
+    1.56 ± 0.12 times faster than 'php insert-orzclick-indexed.php 2000 500'
+    2.05 ± 0.15 times faster than 'php insert-orzclick.php 2000 500'
+   10.39 ± 1.83 times faster than 'php insert-seasclick.php 2000 500'
 Benchmark #1: php insert-orzclick.php 5000 500
-  Time (mean ± σ):      1.162 s ±  0.040 s    [User: 822.0 ms, System: 87.9 ms]
-  Range (min … max):    1.117 s …  1.193 s    3 runs
-
+  Time (mean ± σ):      1.130 s ±  0.081 s    [User: 785.1 ms, System: 100.2 ms]
+  Range (min … max):    1.062 s …  1.219 s    3 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 5000 500
-  Time (mean ± σ):     564.4 ms ±  33.3 ms    [User: 287.4 ms, System: 61.6 ms]
-  Range (min … max):   515.2 ms … 588.9 ms    5 runs
-
+  Time (mean ± σ):     560.8 ms ±  14.0 ms    [User: 268.7 ms, System: 76.2 ms]
+  Range (min … max):   539.6 ms … 573.9 ms    5 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 5000 500
-  Time (mean ± σ):     907.3 ms ±  27.0 ms    [User: 559.7 ms, System: 85.9 ms]
-  Range (min … max):   877.3 ms … 929.8 ms    3 runs
-
-Benchmark #4: php insert-seasclick.php 5000 500
-  Time (mean ± σ):      1.219 s ±  0.023 s    [User: 677.0 ms, System: 88.8 ms]
-  Range (min … max):    1.205 s …  1.245 s    3 runs
-
+  Time (mean ± σ):     852.0 ms ±  51.4 ms    [User: 534.5 ms, System: 74.0 ms]
+  Range (min … max):   817.0 ms … 911.0 ms    3 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 5000 500
+  Time (mean ± σ):     751.5 ms ±  12.4 ms    [User: 670.2 ms, System: 74.2 ms]
+  Range (min … max):   740.6 ms … 765.4 ms    4 runs
+ 
+Benchmark #5: php insert-seasclick.php 5000 500
+  Time (mean ± σ):      1.252 s ±  0.071 s    [User: 708.6 ms, System: 116.9 ms]
+  Range (min … max):    1.176 s …  1.317 s    3 runs
+ 
 Summary
   'php insert-orzclick-columnar.php 5000 500' ran
-    1.61 ± 0.11 times faster than 'php insert-orzclick-indexed.php 5000 500'
-    2.06 ± 0.14 times faster than 'php insert-orzclick.php 5000 500'
-    2.16 ± 0.13 times faster than 'php insert-seasclick.php 5000 500'
+    1.34 ± 0.04 times faster than 'php insert-seasclick-block.php 5000 500'
+    1.52 ± 0.10 times faster than 'php insert-orzclick-indexed.php 5000 500'
+    2.01 ± 0.15 times faster than 'php insert-orzclick.php 5000 500'
+    2.23 ± 0.14 times faster than 'php insert-seasclick.php 5000 500'
 Benchmark #1: php insert-orzclick.php 10000 500
-  Time (mean ± σ):      2.517 s ±  0.242 s    [User: 2.134 s, System: 0.026 s]
-  Range (min … max):    2.239 s …  2.686 s    3 runs
-
+  Time (mean ± σ):      2.533 s ±  0.118 s    [User: 2.127 s, System: 0.046 s]
+  Range (min … max):    2.405 s …  2.639 s    3 runs
+ 
 Benchmark #2: php insert-orzclick-columnar.php 10000 500
-  Time (mean ± σ):     866.8 ms ±  40.0 ms    [User: 520.9 ms, System: 34.6 ms]
-  Range (min … max):   841.1 ms … 912.9 ms    3 runs
-
+  Time (mean ± σ):     873.4 ms ±  49.9 ms    [User: 511.1 ms, System: 46.0 ms]
+  Range (min … max):   816.9 ms … 911.2 ms    3 runs
+ 
 Benchmark #3: php insert-orzclick-indexed.php 10000 500
-  Time (mean ± σ):      1.601 s ±  0.085 s    [User: 1.226 s, System: 0.038 s]
-  Range (min … max):    1.548 s …  1.699 s    3 runs
-
-Benchmark #4: php insert-seasclick.php 10000 500
-  Time (mean ± σ):     11.953 s ±  0.440 s    [User: 1.906 s, System: 0.553 s]
-  Range (min … max):   11.511 s … 12.392 s    3 runs
-
+  Time (mean ± σ):      1.640 s ±  0.012 s    [User: 1.258 s, System: 0.029 s]
+  Range (min … max):    1.626 s …  1.648 s    3 runs
+ 
+Benchmark #4: php insert-seasclick-block.php 10000 500
+  Time (mean ± σ):      2.352 s ±  0.044 s    [User: 1.695 s, System: 0.644 s]
+  Range (min … max):    2.302 s …  2.377 s    3 runs
+ 
+Benchmark #5: php insert-seasclick.php 10000 500
+  Time (mean ± σ):     11.568 s ±  0.791 s    [User: 2.226 s, System: 0.234 s]
+  Range (min … max):   10.898 s … 12.441 s    3 runs
+ 
 Summary
   'php insert-orzclick-columnar.php 10000 500' ran
-    1.85 ± 0.13 times faster than 'php insert-orzclick-indexed.php 10000 500'
-    2.90 ± 0.31 times faster than 'php insert-orzclick.php 10000 500'
-   13.79 ± 0.81 times faster than 'php insert-seasclick.php 10000 500'
+    1.88 ± 0.11 times faster than 'php insert-orzclick-indexed.php 10000 500'
+    2.69 ± 0.16 times faster than 'php insert-seasclick-block.php 10000 500'
+    2.90 ± 0.21 times faster than 'php insert-orzclick.php 10000 500'
+   13.24 ± 1.18 times faster than 'php insert-seasclick.php 10000 500'

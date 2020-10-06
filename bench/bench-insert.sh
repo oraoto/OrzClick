@@ -13,5 +13,6 @@ for insert in "${inserts[@]}"; do
 	"php insert-orzclick.php $insert $loop" \
 	"php insert-orzclick-columnar.php $insert $loop" \
 	"php insert-orzclick-indexed.php $insert $loop" \
+	"php insert-seasclick-block.php $insert $loop" \
 	"php insert-seasclick.php $insert $loop" | tee -a result-insert.txt
 done
